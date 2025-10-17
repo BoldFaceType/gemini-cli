@@ -1,0 +1,11 @@
+# Required Python packages for the Gemini CLI project
+
+flask
+requests
+pytest
+black
+ruff
+mypy
+toml
+pydantic
+click

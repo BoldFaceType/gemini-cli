@@ -1,0 +1,24 @@
+# Configuration settings for the Gemini CLI
+
+[settings]
+default_command = "run"
+log_level = "info"
+output_format = "json"
+
+[commands]
+run = { description = "Execute the main functionality of the Gemini CLI." }
+test = { description = "Run the tests for the Gemini CLI." }
+benchmark = { description = "Execute performance benchmarks." }
+
+[logging]
+file = "gemini-cli.log"
+max_size = "10MB"
+backup_count = 5
+
+[performance]
+enabled = true
+threshold = 0.1  # seconds
+
+[api]
+base_url = "https://api.gemini.example.com"
+timeout = 30  # seconds
