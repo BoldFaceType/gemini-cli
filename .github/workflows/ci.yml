@@ -33,4 +33,3 @@ jobs:
       - name: Run benchmarks
         run: |
           python -m cProfile -o profile.out src/main.py
-          snakeviz profile.out
