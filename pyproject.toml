@@ -1,16 +1,27 @@
-[tool]
+[tool.poetry]
 name = "gemini-cli"
 version = "0.1.0"
 description = "A command-line interface for the Gemini project."
 authors = ["Your Name <you@example.com>"]
 license = "MIT"
-
-[tool.poetry]
-dependencies = [
-    "click",
-    "requests",
-    "toml",
+packages = [
+    { include = "src" },
 ]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask = "*"
+requests = "*"
+toml = "*"
+pydantic = "*"
+click = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+black = "*"
+ruff = "*"
+mypy = "*"
+snakeviz = "*"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
